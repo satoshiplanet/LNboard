@@ -1,0 +1,105 @@
+/* frontend/style.css */
+
+/* Use the "Anonymous Pro" font, which is a monospace font often associated with a "hacker" style */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+body {
+    font-family: 'Anonymous Pro', monospace;  /* Hacker-style font */
+    background: linear-gradient(45deg, #000000, #FFEB3B), url('https://upload.wikimedia.org/wikipedia/commons/6/6f/Lightning_bolt_silhouette.svg');  /* Gradient from black to yellow + SVG lightning bolt */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  /* Ensure the lightning image fills the background */
+    color: #FFEB3B;                           /* Yellow text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;  /* Prevent scrolling */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);  /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #FFEB3B;  /* Yellow title */
+}
+
+#username {
+    width: 80%;
+    padding: 12px;
+    margin: 20px 0;
+    border: 2px solid #FFEB3B;
+    border-radius: 8px;
+    background-color: #333;
+    color: #FFEB3B;
+    font-size: 1.2em;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #FFEB3B;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FFC107;
+}
+
+#balanceContainer {
+    margin-top: 40px;
+}
+
+#balanceContainer p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+#balanceContainer span {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* Gallery for platforms */
+#platformsGallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.platform {
+    width: 100px;
+    height: 100px;
+    background-color: #FFEB3B;
+    color: #121212;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transit
